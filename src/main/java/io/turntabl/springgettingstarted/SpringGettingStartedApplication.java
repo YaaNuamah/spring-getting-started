@@ -8,9 +8,11 @@ public class SpringGettingStartedApplication {
 	public static void main(String[] args) {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 
-		HumanBean person = (HumanBean)ac.getBean("humanBean");
-
+		HumanBean person = (HumanBean) ac.getBean("humanBean");
 		System.out.println(person.fname);
-	}
 
+
+		BestFriendBean anotherperson = (BestFriendBean) ac.getBean("bestFriendBean");
+		System.out.println(anotherperson.fname);
+	}
 }

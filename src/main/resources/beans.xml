@@ -3,6 +3,17 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="humanBean" class="io.turntabl.springgettingstarted.HumanBean">
+    <property name ="FName" value="Yaa Nuamah" />
+    <property name ="LName" value="Kusi-Fordjour"/>
+     <property name ="BestFriend" ref="bestFriendBean"/>
 
+</bean>
 
+    <bean id="bestFriendBean" class="io.turntabl.springgettingstarted.BestFriendBean">
+        <property name ="FName" value="Karen"/>
+        <property name ="LName" value="Macauley"/>
+    </bean>
 </beans>
+
+
