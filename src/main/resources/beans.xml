@@ -10,8 +10,8 @@
 
 </bean>
 
-    <bean id="bestFriendBean" class="io.turntabl.springgettingstarted.BestFriendBean">
-        <property name ="FName" value="Karen"/>
+    <bean id="bestFriendBean" class="io.turntabl.springgettingstarted.HumanBean">
+        <property name ="FName" value="Karen" />
         <property name ="LName" value="Macauley"/>
     </bean>
 </beans>

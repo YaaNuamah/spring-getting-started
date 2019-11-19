@@ -10,9 +10,7 @@ public class SpringGettingStartedApplication {
 
 		HumanBean person = (HumanBean) ac.getBean("humanBean");
 		System.out.println(person.fname);
+		System.out.println(person.getBestFriend().getFName());
 
-
-		BestFriendBean anotherperson = (BestFriendBean) ac.getBean("bestFriendBean");
-		System.out.println(anotherperson.fname);
 	}
 }

@@ -5,16 +5,7 @@ import java.util.logging.Logger;
 public class HumanBean {
     public String fname;
     public String lname;
-    public BestFriendBean bestFriend;
-
-    public BestFriendBean getBestFriend() {
-        return bestFriend;
-    }
-
-    public void setBestFriend(BestFriendBean bestFriend) {
-        this.bestFriend = bestFriend;
-    }
-
+    private HumanBean bestFriend;
 
 
     public HumanBean(){}
@@ -27,4 +18,11 @@ public class HumanBean {
 
     public void setLName(String lname){this.lname = lname;}
 
+    public HumanBean getBestFriend() {
+        return this.bestFriend;
+    }
+
+    public void setBestFriend(HumanBean bestFriend) {
+        this.bestFriend = bestFriend;
+    }
 }
